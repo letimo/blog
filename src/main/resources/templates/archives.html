@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="_fragements :: head(~{::title})">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>归档</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+    <link rel="stylesheet" href="/css/menu.css">
+</head>
+
+<body>
+
+    <!-- 导航 -->
+    <nav th:replace="_fragements :: nav(4)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+        <div class="ui container">
+            <div class="ui inverted secondary stackable menu">
+                <h2 class="ui teal header item">Blog</h2>
+                <a href="#" class="m-item item m-mobile-hide"><i class="mini home icon"></i>&nbsp;首页</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="mini idea icon"></i>&nbsp;分类</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="mini tags icon"></i>&nbsp;标签</a>
+                <a href="#" class="active m-item item m-mobile-hide"><i class="mini clone icon"></i>&nbsp;归档</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="mini info icon"></i>&nbsp;关于我</a>
+                <div class="right m-item item m-mobile-hide">
+                    <div class="ui icon inverted transparent input">
+                        <input type="text" placeholder="Search...">
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" id="toggle1" class="ui black icon button m-right-top m-mobile-show">
+            <i class="icon sidebar"></i>
+        </a>
+
+    </nav>
+
+    <!-- 内容 -->
+    <div id="waypoint" class="m-container-small m-padded-tb-big">
+        <div class="ui container">
+            <!-- Header -->
+            <div class="ui top attached padded segment">
+                <div class="ui middle aligned two column grid">
+                    <div class="column">
+                        <h3 class="ui teal header">归档</h3>
+                    </div>
+                    <div class="right aligned column">
+                        共 <h2 class="ui orange header m-inline-block m-text-thin">14</h2> 篇博客
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="ui center aligned header">2017</h2>
+            <div class="ui fluid vertical menu">
+                <a href="#" target="_blank" class="item">
+                    <span>
+                        <i class="mini teal circle icon" style="margin-right: 13px;"></i>关于刻意练习的清单
+                        <div class="ui teal basic left pointing label m-padded-mini m-text-thin">9月03</div>
+                    </span>
+                    <div class="ui orange basic left pointing label m-padded-mini">原创</div>
+                </a>
+                <a href="#" target="_blank" class="item">
+                    <span>
+                        <i class="mini teal circle icon" style="margin-right: 13px;"></i>关于刻意练习的清单
+                        <div class="ui teal basic left pointing label m-padded-mini m-text-thin">9月03</div>
+                    </span>
+                    <div class="ui orange basic left pointing label m-padded-mini">原创</div>
+                </a>
+                <a href="#" target="_blank" class="item">
+                    <span>
+                        <i class="mini teal circle icon" style="margin-right: 13px;"></i>关于刻意练习的清单
+                        <div class="ui teal basic left pointing label m-padded-mini m-text-thin">9月03</div>
+                    </span>
+                    <div class="ui orange basic left pointing label m-padded-mini">原创</div>
+                </a>
+                <a href="#" target="_blank" class="item">
+                    <span>
+                        <i class="mini teal circle icon" style="margin-right: 13px;"></i>关于刻意练习的清单
+                        <div class="ui teal basic left pointing label m-padded-mini m-text-thin">9月03</div>
+                    </span>
+                    <div class="ui orange basic left pointing label m-padded-mini">原创</div>
+                </a>
+                <a href="#" target="_blank" class="item">
+                    <span>
+                        <i class="mini teal circle icon" style="margin-right: 13px;"></i>关于刻意练习的清单
+                        <div class="ui teal basic left pointing label m-padded-mini m-text-thin">9月03</div>
+                    </span>
+                    <div class="ui orange basic left pointing label m-padded-mini">原创</div>
+                </a>
+            </div>
+
+            <h2 class="ui center aligned header">2016</h2>
+            <div class="ui fluid vertical menu">
+                <a href="#" target="_blank" class="item">
+                    <span>
+                        <i class="mini teal circle icon" style="margin-right: 13px;"></i>关于刻意练习的清单
+                        <div class="ui teal basic left pointing label m-padded-mini m-text-thin">9月03</div>
+                    </span>
+                    <div class="ui orange basic left pointing label m-padded-mini">原创</div>
+                </a>
+                <a href="#" target="_blank" class="item">
+                    <span>
+                        <i class="mini teal circle icon" style="margin-right: 13px;"></i>关于刻意练习的清单
+                        <div class="ui teal basic left pointing label m-padded-mini m-text-thin">9月03</div>
+                    </span>
+                    <div class="ui orange basic left pointing label m-padded-mini">原创</div>
+                </a>
+                <a href="#" target="_blank" class="item">
+                    <span>
+                        <i class="mini teal circle icon" style="margin-right: 13px;"></i>关于刻意练习的清单
+                        <div class="ui teal basic left pointing label m-padded-mini m-text-thin">9月03</div>
+                    </span>
+                    <div class="ui orange basic left pointing label m-padded-mini">原创</div>
+                </a>
+                <a href="#" target="_blank" class="item">
+                    <span>
+                        <i class="mini teal circle icon" style="margin-right: 13px;"></i>关于刻意练习的清单
+                        <div class="ui teal basic left pointing label m-padded-mini m-text-thin">9月03</div>
+                    </span>
+                    <div class="ui orange basic left pointing label m-padded-mini">原创</div>
+                </a>
+                <a href="#" target="_blank" class="item">
+                    <span>
+                        <i class="mini teal circle icon" style="margin-right: 13px;"></i>关于刻意练习的清单
+                        <div class="ui teal basic left pointing label m-padded-mini m-text-thin">9月03</div>
+                    </span>
+                    <div class="ui orange basic left pointing label m-padded-mini">原创</div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 右下角按钮 -->
+    <div id="toolbar" class="m-padded m-fixed m-right-bottom" style="display: none;">
+        <div class="ui vertical icon buttons">
+            <button class="ui wechat icon button"><i class="weixin icon"></i></button>
+            <div id="toTop-button" class="ui icon button"><i class="chevron up icon"></i></div>
+        </div>
+    </div>
+
+    <div id="qrcode" class="ui wechat-qr flowing popup transition hidden" style="width: 130px;">
+        <!-- <img src="/static/images/wechat.png" alt="" class="ui rounded image" style="width: 120px;"> -->
+    </div>
+
+    <br>
+    <br>
+    <!-- 底部 footer -->
+    <footer th:replace="_fragements :: footer" class="ui inverted vertical segment m-padded-tb-massive">
+        <div class="ui center aligned container">
+            <div class="ui inverted divided stackable grid">
+                <div class="three wide column">
+                    <div class="ui inverted link list">
+                        <div class="item">
+                            <img class="ui rounded image" src="/images/wechat.png" alt="" style="width: 110px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-lined">最新博客</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">用户故事（User Story）</a>
+                        <a href="#" class="item">用户故事（User Story）</a>
+                        <a href="#" class="item">用户故事（User Story）</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-lined">联系我</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Email：2234475261@qq.com</a>
+                        <a href="#" class="item">QQ：2234475261</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <div class="ui inverted link list">
+                        <h4 class="ui inverted header m-text-thin m-text-lined">Blog</h4>
+                        <p class="m-text-thin m-text-lined m-opacity-mini">这是我的个人博客，会分享关于编程，相关的内容，希望可以对来到这的人有所帮助</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <p class=" m-text-thin m-text-lined m-opacity-tiny">Copyright &nbsp;&nbsp; ©
+                &nbsp;&nbsp;2019&nbsp;&nbsp;-&nbsp;&nbsp;2020&nbsp;&nbsp; Sheldor</p>
+        </div>
+    </footer>
+
+    <!--/*/<th:block th:replace="_fragements :: script">/*/-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="../static/plugins/qrcode/qrcode.min.js"></script>
+    <script src="../static/plugins/waypoints/jquery.waypoints.min.js"></script>
+    <!--/*/</th:block>/*/-->
+    <script>
+        $('#toggle1').click(function () {
+            $('.m-item').toggleClass('m-mobile-hide');
+        });
+
+
+        // <!-- 微信扫码显示的二维码 -->
+        $('.wechat').popup({
+            popup: $('.wechat-qr'),
+            position: 'left center'
+        });
+
+        // 生成微信二维码
+        var qrcode = new QRCode("qrcode", {
+            text: window.document.location.href,
+            width: 110,
+            height: 110,
+            colorDark: "#000000",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H
+        });
+
+        // 回到顶部
+        $('#toTop-button').click(function () {
+            $(window).scrollTo(0, 500);
+        });
+
+        // 监控滚动条，显示右下角按钮
+        var waypoint = new Waypoint({
+            element: document.getElementById('waypoint'),
+            handler: function (direction) {
+                if (direction == 'down') {
+                    $('#toolbar').show(500);
+                }
+                else {
+                    $('#toolbar').hide(500);
+                }
+                console.log('Scrolled to waypoint!' + direction)
+            }
+        })
+    </script>
+</body>
+
+</html>
