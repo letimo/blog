@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="admin/_fragements :: head(~{::title})">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+    <link rel="stylesheet" href="../../static/css/menu.css">
+</head>
+
+<body>
+
+        <div class="ui middle aligned center aligned grid login">
+            <div class="column login">
+                <h2 class="ui teal image header">
+                    <div class="content">
+                        管理后台登陆
+                    </div>
+                </h2>
+                <form class="ui large form" method="post" action="/admin/login">
+                    <div class="ui segment">
+                        <div class="field">
+                            <div class="ui left icon input">
+                                <i class="user icon"></i>
+                                <input type="text" name="userName" placeholder="用户名">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui left icon input">
+                                <i class="lock icon"></i>
+                                <input type="password" name="password" placeholder="密码">
+                            </div>
+                        </div>
+                        <div class="ui fluid large teal submit button">登   录</div>
+                    </div>
+
+                    <div class="ui error message"></div>
+                    <div class="ui mini negative message" th:unless="${#strings.isEmpty(message)}"  th:text="${message}"></div>
+
+                </form>
+            </div>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+</body>
+<script>
+    $(document)
+        .ready(function() {
+            $('.ui.form')
+                .form({
+                    fields: {
+                        userName: {
+                            identifier  : 'userName',
+                            rules: [
+                                {
+                                    type   : 'empty',
+                                    prompt : '请输入用户名'
+                                }
+                            ]
+                        },
+                        password: {
+                            identifier  : 'password',
+                            rules: [
+                                {
+                                    type   : 'empty',
+                                    prompt : '请输入密码'
+                                },
+                                {
+                                    type   : 'length[6]',
+                                    prompt : '密码长度必须为6个字符'
+                                }
+                            ]
+                        }
+                    }
+                })
+            ;
+        })
+    ;
+</script>
+</html>

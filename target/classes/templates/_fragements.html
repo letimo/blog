@@ -39,15 +39,6 @@
 
 </nav>
 
-<!-- 二级导航 -->
-<div th:fragment="two(n)" class="ui attached pointing menu">
-    <div class="ui container">
-        <div class="right menu">
-            <a href="#" class="item" th:classappend="${n == 1} ? 'active'">发布</a>
-            <a href="#" class="teal item" th:classappend="${n == 2} ? 'active'">列表</a>
-        </div>
-    </div>
-</div>
 
 <!-- 底部 footer -->
 <footer th:fragment="footer" class="ui inverted vertical segment m-padded-tb-massive">

@@ -53,10 +53,8 @@ spring:
 mybatis:
   configuration:
     shrink-whitespaces-in-sql: true
-#mapper xml实现扫描路径
-  #mapper-locations: classpath:mapper/*.xml
   # 扫描的实体类的包名
-  #type-aliases-package: com.rwx.question.questions.pojo
+  type-aliases-package: com.irm.blog.pojo
 logging:
   level:
     root: warn
